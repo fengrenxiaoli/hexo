@@ -137,13 +137,13 @@ git commit -m "remove test.txt"
 
 ## 添加远程库
 先有本地库，后有远程库的时候，如何关联远程库
-1.在github上创建仓库
-2.在本地的learngit仓库下运行命令：
+1. 在github上创建仓库
+2. 在本地的learngit仓库下运行命令：
 ```
 git remote add origin git@github.com:michaelliao/learngit.git
 ```
 添加后，远程库的名字就是`origin，这是Git默认的叫法
-3.把本地库的内容推送到远程，用`git push`命令，实际上是把当前分支master推送到远程
+3. 把本地库的内容推送到远程，用`git push`命令，实际上是把当前分支master推送到远程
 ```
 git push -u origin master
 # 可以把 master 换成你想要推送的任何分支
@@ -392,16 +392,7 @@ git config --global alias.br branch
 当前用户的配置文件`~/.gitconfig`
 
 
-## 分支开发
 
-1. 基于主分支创建个开发分支   `git checkout -b dev1`
-2. 在开发分支中拉取下主分支   `git pull origin master`
-3. 开发完成后,提交到git服务器     `git add` . / `git commit -m '1' `/ `git push origin dev1`
-4. 拉取下主分支，提前解决冲突 `git pull origin master`
-5. 切回主分支(切记要提交后切回)     `git checkout master`
-6. 拉取下最新代码  `git pull origin master `
-7. 合并开发分支   `git merge dev1`(如果失败会提示失败文件,解决掉冲突)
-8. 提交到git服务器
 
 
 
@@ -450,15 +441,10 @@ Git不支持权限控制。不过，因为Git支持钩子（hook），所以，�
 
 
 
-![](/img/IMG148.png)
 
 
-利用工具提升工作效率，而不是去学习工具本身
-1. 多用客户端和工具，少用命令行，除非在linux服务器上直接开发
-2. 每次提交前，diff自己的代码，以免提交错误的代码
-3. 下班回家前，整理好自己的工作区
-4. 并行的项目，使用分支开发
-5. 遇到冲突时，搞明白冲突的原因，千万不要随意丢弃别人的代码
+
+
 
 
 参考：
@@ -467,7 +453,7 @@ Git不支持权限控制。不过，因为Git支持钩子（hook），所以，�
 - http://rogerdudler.github.io/git-guide/
 - https://guides.github.com/activities/hello-world/
 - [分布式和集中式版本控制工具-svn,git,mercurial](http://www.uml.org.cn/pzgl/201207264.asp)
-- [Git在工作中的小总结](https://www.jianshu.com/p/86ef009e5c86)
+
 
 
 

@@ -9,8 +9,8 @@ date: 2016-10-09 19:23:21
 
 2.安装git，创建ssh
 ```
-ssh-keygen -t rsa -C "your_email@example.com"
-#用于创建ssh，会有公钥和私钥，将公钥拷贝到github帐号设置>ssh and gpg keys中
+ssh-keygen -t rsa -f ~/.ssh/id_rsa_github
+#用于创建ssh，会有公钥和私钥，将公钥中的内容拷贝到github帐号 Settings > SSH and GPG keys 中
 
 ssh -T git@github.com
 #用于测试是否成功

@@ -1,0 +1,8 @@
+// Custom styles.
+.posts-collapse .post {
+    margin: 0;
+}
+
+.post-title{
+    margin: 0;
+}
